@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 轉換器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-pane">
+            <h1>Markdown 轉換器</h1>
+            <div class="input-box">
+                <label for="choose">選擇區:</label>
+                <select id="choose">
+                    <option value="leetcode">LeetCode</option>
+                    <option value="APCS">APCS</option>
+                    <option value="UVa">UVa</option>
+                </select>
+                <label for="title">標題:</label>
+                <input type="text" id="title">
+                <label for="link">標題連結:</label>
+                <input type="text" id="link">
+                <label for="difficulty">難度:</label>
+                <input type="text" id="difficulty">
+                <div class="input-box" id="limits">
+                    <label>限制:</label>
+                    <div class="limit-item">
+                        <input type="text" class="limit-input">
+                        <button class="delete-btn">刪除</button>
+                    </div>
+                    <button id="add-btn">新增限制</button>
+                </div>
+                <label for="pass-rate">通過率:</label>
+                <input type="text" id="pass-rate">
+                <label for="statement">Solution 敘述</label>
+                <textarea id="statement" rows="10"></textarea>
+                <label for="time-complexity">時間複雜度:</label>
+                <input type="text" id="time-complexity">
+                <label for="space-complexity">空間複雜度:</label>
+                <input type="text" id="space-complexity">
+                <label for="code">程式碼:</label>
+                <textarea id="code" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="markdown-preview" id="markdown-preview"></div>
+            <div class="copy-btn-container">
+                <button id="copy-btn">複製 Markdown</button>
+              </div>
+              
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
